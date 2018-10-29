@@ -1,0 +1,381 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shishengtao.secondarymarket.fragment.BlankFragment_classify">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            //label
+
+            <RelativeLayout
+                android:id="@+id/Line_Lable"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorLable"
+                    android:gravity="center"
+                    android:text="分类"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/back" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/add_2" />
+            </RelativeLayout>
+
+            //书籍 和数码
+
+            <LinearLayout
+                android:id="@+id/Line_1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/Line_Lable"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:background="#fcbf91"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/book_id"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/book" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/book_id"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="书籍" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:background="#99baf4">
+
+                    <ImageView
+                        android:id="@+id/digital_id"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/digital_product" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/digital_id"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="电器" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            //第一条间隔线Line_2
+
+            <LinearLayout
+                android:id="@+id/Line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/Line_1"
+                android:orientation="horizontal"></LinearLayout>
+
+            //服饰和体育用品
+
+            <LinearLayout
+                android:id="@+id/Line_3"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/Line_2"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:background="#faf794"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/clothes_id"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/clothes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/clothes_id"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="服饰" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:background="#c5fdfb">
+
+                    <ImageView
+                        android:id="@+id/sport_id"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/sport" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sport_id"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="体育用品" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            //第二条辅助线Line_4
+
+            <LinearLayout
+                android:id="@+id/Line_4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/Line_1"
+                android:orientation="horizontal"></LinearLayout>
+
+            //家居和电器
+
+            <LinearLayout
+                android:id="@+id/Line_5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/Line_4"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:background="#b2fcc7"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/electric_id"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/electric" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/electric_id"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="电器" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:background="#edbdfd">
+
+                    <ImageView
+
+                        android:id="@+id/daily_id"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/daily" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/daily_id"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="日常用品" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--   <LinearLayout
+
+                android:id="@+id/Line_1"
+                android:layout_below="@id/Line_Lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/book_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:background="#fdbb78"
+                    android:src="@drawable/book"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <ImageView
+                    android:id="@+id/digital_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/digital_product"
+                    android:background="#81bbf5"
+                    android:layout_weight="0.5"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/Line_2"
+                android:layout_below="@id/Line_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:id="@+id/Line_3"
+                android:layout_below="@id/Line_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/clothe_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/clothes3"
+                    android:layout_below="@id/book_id"
+                    android:background="#c3f7f6"
+
+                    />
+                <LinearLayout
+
+                    android:layout_width="3dp"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal"></LinearLayout>
+                <ImageView
+                    android:id="@+id/sport_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/sport"
+                    android:background="#d7fdd5"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Line_4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/Line_3"
+                android:orientation="horizontal"></LinearLayout>-->
+
+            <!--  <LinearLayout
+                android:layout_below="@id/Line_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/daily_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/daily"
+                    android:background="#a1f5c3"
+                    android:layout_weight="0.5"
+                    />
+                <LinearLayout
+
+                    android:layout_width="3dp"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <ImageView
+                    android:id="@+id/eletric_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/electric1"
+                    android:background="#fde3a9"
+                    android:layout_weight="0.5"
+                    />
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

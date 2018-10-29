@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //输入用户名
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_left"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户注册"
+            android:textSize="25sp"
+            android:textColor="@color/colorLable"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:typeface="serif"
+            />
+    </RelativeLayout>
+
+    //头像
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/login_my"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    //用户名 密码
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp">
+        <EditText
+            android:id="@+id/ETregister_user"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="请输入用户名"
+            android:cursorVisible="true"
+            android:inputType="phone"
+            android:textCursorDrawable="@drawable/cursor_color"
+            />
+        <EditText
+            android:id="@+id/ETregister_password"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_below="@id/ETregister_user"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="请输入密码"
+            android:cursorVisible="true"
+            android:inputType="phone"
+            android:textCursorDrawable="@drawable/cursor_color"
+            />
+        <EditText
+            android:id="@+id/ETsure_password"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_below="@id/ETregister_password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="请输确认密码"
+            android:cursorVisible="true"
+            android:inputType="phone"
+            android:textCursorDrawable="@drawable/cursor_color"
+            />
+    </RelativeLayout>
+
+
+    //注册按钮
+    <Button
+        android:id="@+id/sure_register"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/login_backgr"
+        android:text="注册"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
