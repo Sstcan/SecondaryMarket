@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".my_turn.LoginActivity" />
         <activity android:name=".my_turn.RegisteruserActivity" />
-        <activity android:name=".my_turn.FindPassword"></activity>
+        <activity android:name=".my_turn.FindPassword" />
+        <activity android:name=".find_turn.SellActivity" />
     </application>
 
 </manifest>

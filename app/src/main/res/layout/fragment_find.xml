@@ -5,10 +5,59 @@
     tools:context="com.example.shishengtao.secondarymarket.fragment.BlankFragment_find">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    //求购 摊位
+    <RelativeLayout
+        android:id="@+id/find_R1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="find"
-        android:textSize="60sp"/>
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorLable">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+          >
+
+            <Button
+                android:id="@+id/btn_qiugou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="求购"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:background="@drawable/find_btnbackg"
+                android:checked="true"
+              />
+
+            <Button
+                android:id="@+id/btn_tanwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摊位"
+                android:textColor="@color/Black"
+                android:background="@drawable/find_btnbackg"
+                 />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/find_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/add_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+
 
 </FrameLayout>

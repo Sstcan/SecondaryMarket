@@ -63,7 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="190dp"
-        android:background="@color/colorWhite">
+        android:background="@color/colorWhite"
+        android:id="@+id/relativeLayout">
 
         <ImageView
             android:layout_width="45dp"
@@ -93,12 +94,13 @@
         android:id="@+id/bt_login"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="34dp"
         android:background="@drawable/login_backgr"
         android:text="登录"
         android:textColor="@color/colorWhite"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
 
     <RelativeLayout
         android:layout_width="match_parent"

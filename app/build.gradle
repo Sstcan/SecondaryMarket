@@ -29,9 +29,9 @@ dependencies {
     //引用包的话，尽量都在这个文件里面引用，不要在上面那个文件里面引用。
     //第二，现在出现的错误是图片的命名的一个错误：
     //图片命名中间不允许带空格，只允许小写英文字母a-z和数字0-9，并且不能以数字开头
-   // compile 'com.android.support:appcompat-v7:26.+'
+    // compile 'com.android.support:appcompat-v7:26.+'
+    //  compile 'com.android.support:support-vector-drawable:26.+'
     compile 'com.android.support:design:26.+'
-  //  compile 'com.android.support:support-vector-drawable:26.+'
     compile 'com.youth.banner:banner:1.4.10'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.android.support:support-v4:26.0.0-alpha1'

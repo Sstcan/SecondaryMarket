@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shishengtao.secondarymarket.find_turn.SellActivity">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="368dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        //相机
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/addphoto" />
+        //商品名称
+        <RelativeLayout
+            android:id="@+id/fin_Rname"
+            android:layout_marginTop="110dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/TV_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/TV_name"
+                />
+        </RelativeLayout>
+        //价格
+        <RelativeLayout
+            android:layout_below="@id/fin_Rname"
+            android:id="@+id/find_Rprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/TV_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/TV_price"
+                />
+        </RelativeLayout>
+        //分类
+        <RelativeLayout
+            android:id="@+id/find_Rsort"
+            android:layout_below="@id/find_Rprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/TV_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        //联系方式
+        <RelativeLayout
+            android:id="@+id/find_Rtell"
+            android:layout_below="@id/find_Rsort"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TV_tell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/TV_tell"
+                />
+
+        </RelativeLayout>
+
+        //描述
+        <RelativeLayout
+            android:id="@+id/find_Rscribe"
+            android:layout_below="@id/find_Rtell"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TV_scribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/TV_scribe"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
